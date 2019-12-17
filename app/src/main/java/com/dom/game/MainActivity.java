@@ -17,24 +17,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
     public void findview(){
-        findViewById(R.id.button_up).setOnClickListener(this);
-        findViewById(R.id.button_down).setOnClickListener(this);
-        findViewById(R.id.button_left).setOnClickListener(this);
-        findViewById(R.id.button_right).setOnClickListener(this);
+        findViewById(R.id.arrowup).setOnClickListener(this);
+        findViewById(R.id.arrowdown).setOnClickListener(this);
+        findViewById(R.id.arrowleft).setOnClickListener(this);
+        findViewById(R.id.arrowright).setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.button_up:
+            case R.id.arrowup:
                 Log.d("MainActivity","onClick:UP");
                 break;
-            case R.id.button_down:
+            case R.id.arrowdown:
                 Log.d("MainActivity","onClick:DOWN");
                 break;
-            case R.id.button_left:
+            case R.id.arrowleft:
                 Log.d("MainActivity","onClick:LEFT");
                 break;
-            case R.id.button_right:
+            case R.id.arrowright:
                 Log.d("MainActivity","onClick:RIGHT");
                 break;
 
